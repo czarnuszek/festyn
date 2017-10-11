@@ -1,0 +1,188 @@
+[03-07-2017 06:27:11] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/payments/payment
+[03-07-2017 06:27:15] PayPal\Core\PayPalHttpConnection : DEBUG: Request Headers 	: POST /v1/payments/payment HTTP/1.1, Host: api.sandbox.paypal.com, Accept: */*, Content-Type: application/json, User-Agent: PayPalSDK/PayPal-PHP-SDK 1.11.0 (platform-ver=5.6.30; bit=64; os=Darwin_15.6.0; machine=x86_64; crypto-lib-ver=1.0.2k; curl=7.54.0), Authorization: Bearer A21AAHdQJTJlk6EHwoA3sdPNjoJytOJxx1kHIpR544vbJdZM6WScAb-J5nNYTWeXq7aHA9LnnrLO4xfZfDhw7F0M0ocv0rncg, Content-Length: 722, , 
+[03-07-2017 06:27:15] PayPal\Core\PayPalHttpConnection : DEBUG: Request Data		: {"intent":"sale","payer":{"payment_method":"credit_card","funding_instruments":[{"payment_card":{"type":"visa","number":"4669424246660779","expire_month":"11","expire_year":"2019","cvv2":"012","first_name":"Joe","billing_country":"US","last_name":"Shopper"}}]},"transactions":[{"amount":{"currency":"USD","total":"20","details":{"shipping":"1.20","tax":"1.30","subtotal":"17.50"}},"item_list":{"items":[{"name":"Ground Coffee 40 oz","description":"Ground Coffee 40 oz","currency":"USD","quantity":1,"tax":"0.30","price":"7.50"},{"name":"Granola bars","description":"Granola Bars with Peanuts","currency":"USD","quantity":5,"tax":"0.20","price":"2"}]},"description":"Payment description","invoice_number":"595a705ff0d29"}]}
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-07-2017 06:27:15] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 400
+[03-07-2017 06:27:15] PayPal\Core\PayPalHttpConnection : DEBUG: Response Headers	: HTTP/1.1 400 Bad Request, Date: Mon, 03 Jul 2017 16:27:12 GMT, Server: Apache, paypal-debug-id: 8f00999390cac, Content-Language: *, Connection: close, Paypal-Debug-Id: 8f00999390cac, Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.API.1%26silo_version%3D1880%26app%3Dplatformapiserv%26TIME%3D1617975897%26HTTP_X_PP_AZ_LOCATOR%3D; Expires=Mon, 03 Jul 2017 16:57:15 GMT; domain=.paypal.com; path=/; Secure; HttpOnly, Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT, Vary: Authorization, Content-Length: 249, Content-Type: application/json, , 
+[03-07-2017 06:27:15] PayPal\Core\PayPalHttpConnection : ERROR: Got Http response code 400 when accessing https://api.sandbox.paypal.com/v1/payments/payment. {"name":"PAYEE_ACCOUNT_NO_CONFIRMED_EMAIL","message":"Refused. Payee account does not have a confirmed email.","information_link":"https://developer.paypal.com/webapps/developer/docs/api/#PAYEE_ACCOUNT_NO_CONFIRMED_EMAIL","debug_id":"8f00999390cac"}
+[03-07-2017 06:27:15] PayPal\Core\PayPalHttpConnection : DEBUG: 
+
+================================================================================================================================
+
+[03-07-2017 06:45:53] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1
+[03-07-2017 06:45:54] PayPal\Core\PayPalHttpConnection : DEBUG: Request Headers 	: GET /v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1 HTTP/1.1, Host: api.sandbox.paypal.com, Accept: */*, Content-Type: application/json, User-Agent: PayPalSDK/PayPal-PHP-SDK 1.11.0 (platform-ver=5.6.30; bit=64; os=Darwin_15.6.0; machine=x86_64; crypto-lib-ver=1.0.2k; curl=7.54.0), Authorization: Bearer A21AAHdQJTJlk6EHwoA3sdPNjoJytOJxx1kHIpR544vbJdZM6WScAb-J5nNYTWeXq7aHA9LnnrLO4xfZfDhw7F0M0ocv0rncg, , 
+[03-07-2017 06:45:54] PayPal\Core\PayPalHttpConnection : DEBUG: No Request Payload
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-07-2017 06:45:54] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[03-07-2017 06:45:54] PayPal\Core\PayPalHttpConnection : DEBUG: Response Headers	: HTTP/1.1 200 OK, Date: Mon, 03 Jul 2017 16:45:53 GMT, Server: Apache, paypal-debug-id: 1d15ac53c92d4, Paypal-Debug-Id: 1d15ac53c92d4, Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.API.1%26silo_version%3D1880%26app%3Dplatformapiserv%26TIME%3D3245627993%26HTTP_X_PP_AZ_LOCATOR%3D; Expires=Mon, 03 Jul 2017 17:15:53 GMT; domain=.paypal.com; path=/; Secure; HttpOnly, Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT, Vary: Authorization, Content-Length: 44, Connection: close, Content-Type: application/json, , 
+[03-07-2017 06:45:54] PayPal\Core\PayPalHttpConnection : DEBUG: Response Data 	: {"items":[],"total_items":0,"total_pages":0}
+
+================================================================================================================================
+
+[03-07-2017 06:46:36] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1
+[03-07-2017 06:46:37] PayPal\Core\PayPalHttpConnection : DEBUG: Request Headers 	: GET /v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1 HTTP/1.1, Host: api.sandbox.paypal.com, Accept: */*, Content-Type: application/json, User-Agent: PayPalSDK/PayPal-PHP-SDK 1.11.0 (platform-ver=5.6.30; bit=64; os=Darwin_15.6.0; machine=x86_64; crypto-lib-ver=1.0.2k; curl=7.54.0), Authorization: Bearer A21AAHdQJTJlk6EHwoA3sdPNjoJytOJxx1kHIpR544vbJdZM6WScAb-J5nNYTWeXq7aHA9LnnrLO4xfZfDhw7F0M0ocv0rncg, , 
+[03-07-2017 06:46:37] PayPal\Core\PayPalHttpConnection : DEBUG: No Request Payload
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-07-2017 06:46:37] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[03-07-2017 06:46:37] PayPal\Core\PayPalHttpConnection : DEBUG: Response Headers	: HTTP/1.1 200 OK, Date: Mon, 03 Jul 2017 16:46:36 GMT, Server: Apache, paypal-debug-id: 998c2120cd53a, Paypal-Debug-Id: 998c2120cd53a, Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.API.1%26silo_version%3D1880%26app%3Dplatformapiserv%26TIME%3D3967048281%26HTTP_X_PP_AZ_LOCATOR%3D; Expires=Mon, 03 Jul 2017 17:16:36 GMT; domain=.paypal.com; path=/; Secure; HttpOnly, Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT, Vary: Authorization, Content-Length: 44, Connection: close, Content-Type: application/json, , 
+[03-07-2017 06:46:37] PayPal\Core\PayPalHttpConnection : DEBUG: Response Data 	: {"items":[],"total_items":0,"total_pages":0}
+
+================================================================================================================================
+
+[03-07-2017 06:49:58] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1
+[03-07-2017 06:49:59] PayPal\Core\PayPalHttpConnection : DEBUG: Request Headers 	: GET /v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1 HTTP/1.1, Host: api.sandbox.paypal.com, Accept: */*, Content-Type: application/json, User-Agent: PayPalSDK/PayPal-PHP-SDK 1.11.0 (platform-ver=5.6.30; bit=64; os=Darwin_15.6.0; machine=x86_64; crypto-lib-ver=1.0.2k; curl=7.54.0), Authorization: Bearer A21AAHdQJTJlk6EHwoA3sdPNjoJytOJxx1kHIpR544vbJdZM6WScAb-J5nNYTWeXq7aHA9LnnrLO4xfZfDhw7F0M0ocv0rncg, , 
+[03-07-2017 06:49:59] PayPal\Core\PayPalHttpConnection : DEBUG: No Request Payload
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-07-2017 06:49:59] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[03-07-2017 06:49:59] PayPal\Core\PayPalHttpConnection : DEBUG: Response Headers	: HTTP/1.1 200 OK, Date: Mon, 03 Jul 2017 16:49:59 GMT, Server: Apache, paypal-debug-id: bf5afeb610a83, Paypal-Debug-Id: bf5afeb610a83, Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.API.1%26silo_version%3D1880%26app%3Dplatformapiserv%26TIME%3D3077921369%26HTTP_X_PP_AZ_LOCATOR%3D; Expires=Mon, 03 Jul 2017 17:19:59 GMT; domain=.paypal.com; path=/; Secure; HttpOnly, Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT, Vary: Authorization, Content-Length: 44, Connection: close, Content-Type: application/json, , 
+[03-07-2017 06:49:59] PayPal\Core\PayPalHttpConnection : DEBUG: Response Data 	: {"items":[],"total_items":0,"total_pages":0}
+
+================================================================================================================================
+
+[03-07-2017 06:50:37] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1
+[03-07-2017 06:50:38] PayPal\Core\PayPalHttpConnection : DEBUG: Request Headers 	: GET /v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1 HTTP/1.1, Host: api.sandbox.paypal.com, Accept: */*, Content-Type: application/json, User-Agent: PayPalSDK/PayPal-PHP-SDK 1.11.0 (platform-ver=5.6.30; bit=64; os=Darwin_15.6.0; machine=x86_64; crypto-lib-ver=1.0.2k; curl=7.54.0), Authorization: Bearer A21AAHdQJTJlk6EHwoA3sdPNjoJytOJxx1kHIpR544vbJdZM6WScAb-J5nNYTWeXq7aHA9LnnrLO4xfZfDhw7F0M0ocv0rncg, , 
+[03-07-2017 06:50:38] PayPal\Core\PayPalHttpConnection : DEBUG: No Request Payload
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-07-2017 06:50:38] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[03-07-2017 06:50:38] PayPal\Core\PayPalHttpConnection : DEBUG: Response Headers	: HTTP/1.1 200 OK, Date: Mon, 03 Jul 2017 16:50:38 GMT, Server: Apache, paypal-debug-id: 3b76fc58214c, Paypal-Debug-Id: 3b76fc58214c, Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.API.1%26silo_version%3D1880%26app%3Dplatformapiserv%26TIME%3D3732232793%26HTTP_X_PP_AZ_LOCATOR%3D; Expires=Mon, 03 Jul 2017 17:20:38 GMT; domain=.paypal.com; path=/; Secure; HttpOnly, Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT, Vary: Authorization, Content-Length: 44, Connection: close, Content-Type: application/json, , 
+[03-07-2017 06:50:38] PayPal\Core\PayPalHttpConnection : DEBUG: Response Data 	: {"items":[],"total_items":0,"total_pages":0}
+
+================================================================================================================================
+
+[03-07-2017 06:50:50] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1
+[03-07-2017 06:50:51] PayPal\Core\PayPalHttpConnection : DEBUG: Request Headers 	: GET /v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1 HTTP/1.1, Host: api.sandbox.paypal.com, Accept: */*, Content-Type: application/json, User-Agent: PayPalSDK/PayPal-PHP-SDK 1.11.0 (platform-ver=5.6.30; bit=64; os=Darwin_15.6.0; machine=x86_64; crypto-lib-ver=1.0.2k; curl=7.54.0), Authorization: Bearer A21AAHdQJTJlk6EHwoA3sdPNjoJytOJxx1kHIpR544vbJdZM6WScAb-J5nNYTWeXq7aHA9LnnrLO4xfZfDhw7F0M0ocv0rncg, , 
+[03-07-2017 06:50:51] PayPal\Core\PayPalHttpConnection : DEBUG: No Request Payload
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-07-2017 06:50:51] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[03-07-2017 06:50:51] PayPal\Core\PayPalHttpConnection : DEBUG: Response Headers	: HTTP/1.1 200 OK, Date: Mon, 03 Jul 2017 16:50:50 GMT, Server: Apache, paypal-debug-id: 4bd3e88bd41d3, Paypal-Debug-Id: 4bd3e88bd41d3, Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.API.1%26silo_version%3D1880%26app%3Dplatformapiserv%26TIME%3D3933559385%26HTTP_X_PP_AZ_LOCATOR%3D; Expires=Mon, 03 Jul 2017 17:20:50 GMT; domain=.paypal.com; path=/; Secure; HttpOnly, Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT, Vary: Authorization, Content-Length: 44, Connection: close, Content-Type: application/json, , 
+[03-07-2017 06:50:51] PayPal\Core\PayPalHttpConnection : DEBUG: Response Data 	: {"items":[],"total_items":0,"total_pages":0}
+
+================================================================================================================================
+
+[03-07-2017 06:53:16] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1
+[03-07-2017 06:53:17] PayPal\Core\PayPalHttpConnection : DEBUG: Request Headers 	: GET /v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1 HTTP/1.1, Host: api.sandbox.paypal.com, Accept: */*, Content-Type: application/json, User-Agent: PayPalSDK/PayPal-PHP-SDK 1.11.0 (platform-ver=5.6.30; bit=64; os=Darwin_15.6.0; machine=x86_64; crypto-lib-ver=1.0.2k; curl=7.54.0), Authorization: Bearer A21AAHdQJTJlk6EHwoA3sdPNjoJytOJxx1kHIpR544vbJdZM6WScAb-J5nNYTWeXq7aHA9LnnrLO4xfZfDhw7F0M0ocv0rncg, , 
+[03-07-2017 06:53:17] PayPal\Core\PayPalHttpConnection : DEBUG: No Request Payload
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-07-2017 06:53:17] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[03-07-2017 06:53:17] PayPal\Core\PayPalHttpConnection : DEBUG: Response Headers	: HTTP/1.1 200 OK, Date: Mon, 03 Jul 2017 16:53:16 GMT, Server: Apache, paypal-debug-id: e1c76764f0bfa, Paypal-Debug-Id: e1c76764f0bfa, Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.API.1%26silo_version%3D1880%26app%3Dplatformapiserv%26TIME%3D2088131161%26HTTP_X_PP_AZ_LOCATOR%3D; Expires=Mon, 03 Jul 2017 17:23:17 GMT; domain=.paypal.com; path=/; Secure; HttpOnly, Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT, Vary: Authorization, Content-Length: 44, Connection: close, Content-Type: application/json, , 
+[03-07-2017 06:53:17] PayPal\Core\PayPalHttpConnection : DEBUG: Response Data 	: {"items":[],"total_items":0,"total_pages":0}
+
+================================================================================================================================
+
+[03-07-2017 06:54:15] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1
+[03-07-2017 06:54:16] PayPal\Core\PayPalHttpConnection : DEBUG: Request Headers 	: GET /v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1 HTTP/1.1, Host: api.sandbox.paypal.com, Accept: */*, Content-Type: application/json, User-Agent: PayPalSDK/PayPal-PHP-SDK 1.11.0 (platform-ver=5.6.30; bit=64; os=Darwin_15.6.0; machine=x86_64; crypto-lib-ver=1.0.2k; curl=7.54.0), Authorization: Bearer A21AAHdQJTJlk6EHwoA3sdPNjoJytOJxx1kHIpR544vbJdZM6WScAb-J5nNYTWeXq7aHA9LnnrLO4xfZfDhw7F0M0ocv0rncg, , 
+[03-07-2017 06:54:16] PayPal\Core\PayPalHttpConnection : DEBUG: No Request Payload
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-07-2017 06:54:16] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[03-07-2017 06:54:16] PayPal\Core\PayPalHttpConnection : DEBUG: Response Headers	: HTTP/1.1 200 OK, Date: Mon, 03 Jul 2017 16:54:15 GMT, Server: Apache, paypal-debug-id: 51900932c01b1, Paypal-Debug-Id: 51900932c01b1, Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.API.1%26silo_version%3D1880%26app%3Dplatformapiserv%26TIME%3D3077986905%26HTTP_X_PP_AZ_LOCATOR%3D; Expires=Mon, 03 Jul 2017 17:24:15 GMT; domain=.paypal.com; path=/; Secure; HttpOnly, Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT, Vary: Authorization, Content-Length: 44, Connection: close, Content-Type: application/json, , 
+[03-07-2017 06:54:16] PayPal\Core\PayPalHttpConnection : DEBUG: Response Data 	: {"items":[],"total_items":0,"total_pages":0}
+
+================================================================================================================================
+
+[03-07-2017 06:58:03] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1
+[03-07-2017 06:58:04] PayPal\Core\PayPalHttpConnection : DEBUG: Request Headers 	: GET /v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1 HTTP/1.1, Host: api.sandbox.paypal.com, Accept: */*, Content-Type: application/json, User-Agent: PayPalSDK/PayPal-PHP-SDK 1.11.0 (platform-ver=5.6.30; bit=64; os=Darwin_15.6.0; machine=x86_64; crypto-lib-ver=1.0.2k; curl=7.54.0), Authorization: Bearer A21AAHdQJTJlk6EHwoA3sdPNjoJytOJxx1kHIpR544vbJdZM6WScAb-J5nNYTWeXq7aHA9LnnrLO4xfZfDhw7F0M0ocv0rncg, , 
+[03-07-2017 06:58:04] PayPal\Core\PayPalHttpConnection : DEBUG: No Request Payload
+--------------------------------------------------------------------------------------------------------------------------------
+
+[03-07-2017 06:58:04] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[03-07-2017 06:58:04] PayPal\Core\PayPalHttpConnection : DEBUG: Response Headers	: HTTP/1.1 200 OK, Date: Mon, 03 Jul 2017 16:58:04 GMT, Server: Apache, paypal-debug-id: 233d29c63d244, Paypal-Debug-Id: 233d29c63d244, Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.API.1%26silo_version%3D1880%26app%3Dplatformapiserv%26TIME%3D2625067609%26HTTP_X_PP_AZ_LOCATOR%3D; Expires=Mon, 03 Jul 2017 17:28:04 GMT; domain=.paypal.com; path=/; Secure; HttpOnly, Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT, Vary: Authorization, Content-Length: 44, Connection: close, Content-Type: application/json, , 
+[03-07-2017 06:58:04] PayPal\Core\PayPalHttpConnection : DEBUG: Response Data 	: {"items":[],"total_items":0,"total_pages":0}
+
+================================================================================================================================
+
+[04-07-2017 03:55:20] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[04-07-2017 03:55:21] PayPal\Core\PayPalHttpConnection : DEBUG: Request Headers 	: POST /v1/oauth2/token HTTP/1.1, Host: api.sandbox.paypal.com, User-Agent: PayPalSDK/PayPal-PHP-SDK 1.11.0 (platform-ver=5.6.30; bit=64; os=Darwin_15.6.0; machine=x86_64; crypto-lib-ver=1.0.2k; curl=7.54.0), Authorization: Basic QWRTSHJIZlRua19lNFhhRHhpdEJ0R2tzbGFhMWhSWDJ2M3l4ZzAtd0plZXlGajVyblNURVdka1gtR0V1SzNBQUt5b1J6bjlwY2tJYmpXdWI6RUZkdlo2V1dhUE42UnBTOVdFcVFSNmFaMExIdDZzWHFYekF0OGZjYS15NElZQi1BZDFNVEpYQ2hCR2IwWVVGN1h5a1dWYzFQUFBpeHNJQmI=, Accept: */*, Content-Length: 29, Content-Type: application/x-www-form-urlencoded, , 
+[04-07-2017 03:55:21] PayPal\Core\PayPalHttpConnection : DEBUG: Request Data		: grant_type=client_credentials
+--------------------------------------------------------------------------------------------------------------------------------
+
+[04-07-2017 03:55:21] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[04-07-2017 03:55:21] PayPal\Core\PayPalHttpConnection : DEBUG: Response Headers	: HTTP/1.1 200 OK, Date: Tue, 04 Jul 2017 13:55:21 GMT, Server: Apache, paypal-debug-id: df6cc8bc93181, X-PAYPAL-TOKEN-SERVICE: IAAS, Paypal-Debug-Id: df6cc8bc93181, Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.API.1%26silo_version%3D1880%26app%3Dplatformapiserv%26TIME%3D1235114841%26HTTP_X_PP_AZ_LOCATOR%3D; Expires=Tue, 04 Jul 2017 14:25:21 GMT; domain=.paypal.com; path=/; Secure; HttpOnly, Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT, Vary: Authorization, Content-Length: 550, Connection: close, Content-Type: application/json, , 
+[04-07-2017 03:55:21] PayPal\Core\PayPalHttpConnection : DEBUG: Response Data 	: {"scope":"https://uri.paypal.com/services/subscriptions https://api.paypal.com/v1/payments/.* https://api.paypal.com/v1/vault/credit-card https://uri.paypal.com/services/applications/webhooks openid https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.*","nonce":"2017-07-04T13:55:21ZZ0qtTQ8It8rnuCS71bAOzoHJfKwTBa-dzhNV4pMz7rY","access_token":"A21AAEeeGPYoKhc4xsknbrTQN1W_cQcS7HNQlDB1riwl9zMqHFw0EofZqC29ZnNMv5BDK4VDIEynv3L7v5ilPskE_pW1SgHJQ","token_type":"Bearer","app_id":"APP-80W284485P519543T","expires_in":32400}
+
+================================================================================================================================
+
+[04-07-2017 03:55:21] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1
+[04-07-2017 03:55:22] PayPal\Core\PayPalHttpConnection : DEBUG: Request Headers 	: GET /v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1 HTTP/1.1, Host: api.sandbox.paypal.com, Accept: */*, Content-Type: application/json, User-Agent: PayPalSDK/PayPal-PHP-SDK 1.11.0 (platform-ver=5.6.30; bit=64; os=Darwin_15.6.0; machine=x86_64; crypto-lib-ver=1.0.2k; curl=7.54.0), Authorization: Bearer A21AAEeeGPYoKhc4xsknbrTQN1W_cQcS7HNQlDB1riwl9zMqHFw0EofZqC29ZnNMv5BDK4VDIEynv3L7v5ilPskE_pW1SgHJQ, , 
+[04-07-2017 03:55:22] PayPal\Core\PayPalHttpConnection : DEBUG: No Request Payload
+--------------------------------------------------------------------------------------------------------------------------------
+
+[04-07-2017 03:55:22] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[04-07-2017 03:55:22] PayPal\Core\PayPalHttpConnection : DEBUG: Response Headers	: HTTP/1.1 200 OK, Date: Tue, 04 Jul 2017 13:55:22 GMT, Server: Apache, paypal-debug-id: f9a124279e58a, Paypal-Debug-Id: f9a124279e58a, Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.API.1%26silo_version%3D1880%26app%3Dplatformapiserv%26TIME%3D1251892057%26HTTP_X_PP_AZ_LOCATOR%3D; Expires=Tue, 04 Jul 2017 14:25:22 GMT; domain=.paypal.com; path=/; Secure; HttpOnly, Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT, Vary: Authorization, Content-Length: 44, Connection: close, Content-Type: application/json, , 
+[04-07-2017 03:55:22] PayPal\Core\PayPalHttpConnection : DEBUG: Response Data 	: {"items":[],"total_items":0,"total_pages":0}
+
+================================================================================================================================
+
+[04-07-2017 03:55:47] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1
+[04-07-2017 03:55:48] PayPal\Core\PayPalHttpConnection : DEBUG: Request Headers 	: GET /v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1 HTTP/1.1, Host: api.sandbox.paypal.com, Accept: */*, Content-Type: application/json, User-Agent: PayPalSDK/PayPal-PHP-SDK 1.11.0 (platform-ver=5.6.30; bit=64; os=Darwin_15.6.0; machine=x86_64; crypto-lib-ver=1.0.2k; curl=7.54.0), Authorization: Bearer A21AAEeeGPYoKhc4xsknbrTQN1W_cQcS7HNQlDB1riwl9zMqHFw0EofZqC29ZnNMv5BDK4VDIEynv3L7v5ilPskE_pW1SgHJQ, , 
+[04-07-2017 03:55:48] PayPal\Core\PayPalHttpConnection : DEBUG: No Request Payload
+--------------------------------------------------------------------------------------------------------------------------------
+
+[04-07-2017 03:55:48] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[04-07-2017 03:55:48] PayPal\Core\PayPalHttpConnection : DEBUG: Response Headers	: HTTP/1.1 200 OK, Date: Tue, 04 Jul 2017 13:55:48 GMT, Server: Apache, paypal-debug-id: 3537ecf57e88, Paypal-Debug-Id: 3537ecf57e88, Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.API.1%26silo_version%3D1880%26app%3Dplatformapiserv%26TIME%3D1688099673%26HTTP_X_PP_AZ_LOCATOR%3D; Expires=Tue, 04 Jul 2017 14:25:48 GMT; domain=.paypal.com; path=/; Secure; HttpOnly, Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT, Vary: Authorization, Content-Length: 44, Connection: close, Content-Type: application/json, , 
+[04-07-2017 03:55:48] PayPal\Core\PayPalHttpConnection : DEBUG: Response Data 	: {"items":[],"total_items":0,"total_pages":0}
+
+================================================================================================================================
+
+[04-07-2017 03:56:35] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1
+[04-07-2017 03:56:35] PayPal\Core\PayPalHttpConnection : DEBUG: Request Headers 	: GET /v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1 HTTP/1.1, Host: api.sandbox.paypal.com, Accept: */*, Content-Type: application/json, User-Agent: PayPalSDK/PayPal-PHP-SDK 1.11.0 (platform-ver=5.6.30; bit=64; os=Darwin_15.6.0; machine=x86_64; crypto-lib-ver=1.0.2k; curl=7.54.0), Authorization: Bearer A21AAEeeGPYoKhc4xsknbrTQN1W_cQcS7HNQlDB1riwl9zMqHFw0EofZqC29ZnNMv5BDK4VDIEynv3L7v5ilPskE_pW1SgHJQ, , 
+[04-07-2017 03:56:35] PayPal\Core\PayPalHttpConnection : DEBUG: No Request Payload
+--------------------------------------------------------------------------------------------------------------------------------
+
+[04-07-2017 03:56:35] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[04-07-2017 03:56:35] PayPal\Core\PayPalHttpConnection : DEBUG: Response Headers	: HTTP/1.1 200 OK, Date: Tue, 04 Jul 2017 13:56:35 GMT, Server: Apache, paypal-debug-id: 32f26537bc9f5, Paypal-Debug-Id: 32f26537bc9f5, Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.API.1%26silo_version%3D1880%26app%3Dplatformapiserv%26TIME%3D2476628825%26HTTP_X_PP_AZ_LOCATOR%3D; Expires=Tue, 04 Jul 2017 14:26:35 GMT; domain=.paypal.com; path=/; Secure; HttpOnly, Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT, Vary: Authorization, Content-Length: 44, Connection: close, Content-Type: application/json, , 
+[04-07-2017 03:56:35] PayPal\Core\PayPalHttpConnection : DEBUG: Response Data 	: {"items":[],"total_items":0,"total_pages":0}
+
+================================================================================================================================
+
+[24-07-2017 06:03:58] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.sandbox.paypal.com/v1/oauth2/token
+[24-07-2017 06:03:59] PayPal\Core\PayPalHttpConnection : DEBUG: Request Headers 	: POST /v1/oauth2/token HTTP/1.1, Host: api.sandbox.paypal.com, User-Agent: PayPalSDK/PayPal-PHP-SDK 1.11.0 (platform-ver=5.6.30; bit=64; os=Darwin_15.6.0; machine=x86_64; crypto-lib-ver=1.0.2k; curl=7.54.0), Authorization: Basic QWRTSHJIZlRua19lNFhhRHhpdEJ0R2tzbGFhMWhSWDJ2M3l4ZzAtd0plZXlGajVyblNURVdka1gtR0V1SzNBQUt5b1J6bjlwY2tJYmpXdWI6RUZkdlo2V1dhUE42UnBTOVdFcVFSNmFaMExIdDZzWHFYekF0OGZjYS15NElZQi1BZDFNVEpYQ2hCR2IwWVVGN1h5a1dWYzFQUFBpeHNJQmI=, Accept: */*, Content-Length: 29, Content-Type: application/x-www-form-urlencoded, , 
+[24-07-2017 06:03:59] PayPal\Core\PayPalHttpConnection : DEBUG: Request Data		: grant_type=client_credentials
+--------------------------------------------------------------------------------------------------------------------------------
+
+[24-07-2017 06:03:59] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[24-07-2017 06:03:59] PayPal\Core\PayPalHttpConnection : DEBUG: Response Headers	: HTTP/1.1 200 OK, Date: Mon, 24 Jul 2017 16:03:59 GMT, Server: Apache, paypal-debug-id: 4e88443c8d40a, X-PAYPAL-TOKEN-SERVICE: IAAS, HTTP_X_PP_AZ_LOCATOR: sandbox.slc, Paypal-Debug-Id: 4e88443c8d40a, Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.API.1%26silo_version%3D1880%26app%3Dapiplatformproxyserv%26TIME%3D1864005209%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Mon, 24 Jul 2017 16:34:00 GMT; domain=.paypal.com; path=/; Secure; HttpOnly, Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT, Vary: Authorization, Content-Length: 550, Connection: close, Content-Type: application/json, , 
+[24-07-2017 06:03:59] PayPal\Core\PayPalHttpConnection : DEBUG: Response Data 	: {"scope":"https://uri.paypal.com/services/subscriptions https://api.paypal.com/v1/payments/.* https://api.paypal.com/v1/vault/credit-card https://uri.paypal.com/services/applications/webhooks openid https://uri.paypal.com/payments/payouts https://api.paypal.com/v1/vault/credit-card/.*","nonce":"2017-07-24T16:03:59Zofc_uVr62R8C3iVNxXo6jNfCc3j4LVX92rlO76TUrl0","access_token":"A21AAFk61CfrRIKpV6bIgQ7_aWjCfN3L_WMD2V_GPT84F4zhuSBXNhL3AJ_XURBuV2TkWL4zW0gcRUj5cH3og_7nwqpcjjAiQ","token_type":"Bearer","app_id":"APP-80W284485P519543T","expires_in":32399}
+
+================================================================================================================================
+
+[24-07-2017 06:03:59] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1
+[24-07-2017 06:04:00] PayPal\Core\PayPalHttpConnection : DEBUG: Request Headers 	: GET /v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1 HTTP/1.1, Host: api.sandbox.paypal.com, Accept: */*, Content-Type: application/json, User-Agent: PayPalSDK/PayPal-PHP-SDK 1.11.0 (platform-ver=5.6.30; bit=64; os=Darwin_15.6.0; machine=x86_64; crypto-lib-ver=1.0.2k; curl=7.54.0), Authorization: Bearer A21AAFk61CfrRIKpV6bIgQ7_aWjCfN3L_WMD2V_GPT84F4zhuSBXNhL3AJ_XURBuV2TkWL4zW0gcRUj5cH3og_7nwqpcjjAiQ, , 
+[24-07-2017 06:04:00] PayPal\Core\PayPalHttpConnection : DEBUG: No Request Payload
+--------------------------------------------------------------------------------------------------------------------------------
+
+[24-07-2017 06:04:00] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[24-07-2017 06:04:00] PayPal\Core\PayPalHttpConnection : DEBUG: Response Headers	: HTTP/1.1 200 OK, Date: Mon, 24 Jul 2017 16:04:00 GMT, Server: Apache, paypal-debug-id: 8146a97ab94a4, HTTP_X_PP_AZ_LOCATOR: sandbox.slc, Paypal-Debug-Id: 8146a97ab94a4, Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.API.1%26silo_version%3D1880%26app%3Dapiplatformproxyserv%26TIME%3D1880782425%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Mon, 24 Jul 2017 16:34:00 GMT; domain=.paypal.com; path=/; Secure; HttpOnly, Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT, Vary: Authorization, Content-Length: 44, Connection: close, Content-Type: application/json, , 
+[24-07-2017 06:04:00] PayPal\Core\PayPalHttpConnection : DEBUG: Response Data 	: {"items":[],"total_items":0,"total_pages":0}
+
+================================================================================================================================
+
+[24-07-2017 06:07:55] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1
+[24-07-2017 06:07:56] PayPal\Core\PayPalHttpConnection : DEBUG: Request Headers 	: GET /v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1 HTTP/1.1, Host: api.sandbox.paypal.com, Accept: */*, Content-Type: application/json, User-Agent: PayPalSDK/PayPal-PHP-SDK 1.11.0 (platform-ver=5.6.30; bit=64; os=Darwin_15.6.0; machine=x86_64; crypto-lib-ver=1.0.2k; curl=7.54.0), Authorization: Bearer A21AAFk61CfrRIKpV6bIgQ7_aWjCfN3L_WMD2V_GPT84F4zhuSBXNhL3AJ_XURBuV2TkWL4zW0gcRUj5cH3og_7nwqpcjjAiQ, , 
+[24-07-2017 06:07:56] PayPal\Core\PayPalHttpConnection : DEBUG: No Request Payload
+--------------------------------------------------------------------------------------------------------------------------------
+
+[24-07-2017 06:07:56] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[24-07-2017 06:07:56] PayPal\Core\PayPalHttpConnection : DEBUG: Response Headers	: HTTP/1.1 200 OK, Date: Mon, 24 Jul 2017 16:07:56 GMT, Server: Apache, paypal-debug-id: 6f95564485a59, HTTP_X_PP_AZ_LOCATOR: sandbox.slc, Paypal-Debug-Id: 6f95564485a59, Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.API.1%26silo_version%3D1880%26app%3Dapiplatformproxyserv%26TIME%3D1545303641%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Mon, 24 Jul 2017 16:37:56 GMT; domain=.paypal.com; path=/; Secure; HttpOnly, Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT, Vary: Authorization, Content-Length: 44, Connection: close, Content-Type: application/json, , 
+[24-07-2017 06:07:56] PayPal\Core\PayPalHttpConnection : DEBUG: Response Data 	: {"items":[],"total_items":0,"total_pages":0}
+
+================================================================================================================================
+
+[24-07-2017 04:42:13] PayPal\Core\PayPalHttpConnection : INFO: GET https://api.sandbox.paypal.com/v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1
+[24-07-2017 04:42:14] PayPal\Core\PayPalHttpConnection : DEBUG: Request Headers 	: GET /v1/vault/credit-cards?sort_by=create_time&sort_order=desc&merchant_id=MyStore1 HTTP/1.1, Host: api.sandbox.paypal.com, Accept: */*, Content-Type: application/json, User-Agent: PayPalSDK/PayPal-PHP-SDK 1.11.0 (platform-ver=5.6.30; bit=64; os=Darwin_15.6.0; machine=x86_64; crypto-lib-ver=1.0.2k; curl=7.54.0), Authorization: Bearer A21AAFk61CfrRIKpV6bIgQ7_aWjCfN3L_WMD2V_GPT84F4zhuSBXNhL3AJ_XURBuV2TkWL4zW0gcRUj5cH3og_7nwqpcjjAiQ, , 
+[24-07-2017 04:42:14] PayPal\Core\PayPalHttpConnection : DEBUG: No Request Payload
+--------------------------------------------------------------------------------------------------------------------------------
+
+[24-07-2017 04:42:14] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[24-07-2017 04:42:14] PayPal\Core\PayPalHttpConnection : DEBUG: Response Headers	: HTTP/1.1 200 OK, Date: Mon, 24 Jul 2017 16:42:14 GMT, Server: Apache, paypal-debug-id: 6e9eeaf89b8a, HTTP_X_PP_AZ_LOCATOR: sandbox.slc, Paypal-Debug-Id: 6e9eeaf89b8a, Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.API.1%26silo_version%3D1880%26app%3Dapiplatformproxyserv%26TIME%3D1713600089%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Mon, 24 Jul 2017 17:12:14 GMT; domain=.paypal.com; path=/; Secure; HttpOnly, Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT, Vary: Authorization, Content-Length: 44, Connection: close, Content-Type: application/json, , 
+[24-07-2017 04:42:14] PayPal\Core\PayPalHttpConnection : DEBUG: Response Data 	: {"items":[],"total_items":0,"total_pages":0}
+
+================================================================================================================================
+
